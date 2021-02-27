@@ -382,9 +382,10 @@ pc 1920px ~ 1200px
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 45px;
-    width: 40px;
-    height: 40px;
+    left: 30px;
+    bottom: 118px;
+    width: 30px;
+    height: 30px;
     background-color: black;
     border-radius: 100%;
     opacity:0.6;
@@ -395,9 +396,9 @@ pc 1920px ~ 1200px
     align-items: center;
     position: absolute;
     right: 30px;
-    bottom: 45px;
-    width: 40px;
-    height: 40px;
+    bottom: 118px;
+    width: 30px;
+    height: 30px;
     background-color: black;
     border-radius: 100%;
     opacity:0.6;
