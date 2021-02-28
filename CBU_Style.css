@@ -67,6 +67,9 @@ main{
 
 }
 
+
+
+
 h2{
     text-align: center;
     font-weight:bold;
@@ -94,13 +97,10 @@ h2.main__study-h2:after {
         transparent 100%);
 }
 
-.main__study-container.animated {
-    -webkit-transition: left .3s ease-in;
-    transition: left.3s ease-in;
-}
+
 .main__slide-container{
-    display: flex;
     width: 100%;
+    
     -webkit-mask: linear-gradient(to right,transparent,
         black 5%,
         black 93%,
@@ -112,6 +112,9 @@ h2.main__study-h2:after {
 .main__study-slide > a{
     color: black;
     
+}
+.main__slide-list{
+    display: flex;
 }
 
 .main__slide-box{
@@ -142,6 +145,16 @@ h3:hover{
     
 }
 
+.main__study-buttonA:active{
+    opacity:1;
+}
+
+.main__study-buttonB:active{
+    opacity:1;
+}
+
+
+
 .main__study-buttonA{
     display: flex;
     justify-content: center;
@@ -154,7 +167,7 @@ h3:hover{
     background-color: black;
     border-radius: 100%;
     opacity:0.6;
-    
+    cursor: pointer;
 }
 .main__study-buttonB{
     display: flex;
@@ -168,10 +181,7 @@ h3:hover{
     background-color: black;
     border-radius: 100%;
     opacity:0.6;
-}
-
-.main__study-buttonA.disabled, .main__study-buttonB.disbled{
-    display: none;
+    cursor: pointer;
 }
 
 
@@ -320,12 +330,13 @@ pc 1920px ~ 1200px
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 55px;
-    width: 40px;
-    height: 40px;
+    bottom: 95px;
+    width: 50px;
+    height: 50px;
     background-color: black;
     border-radius: 100%;
     opacity:0.6;
+    
 }
 .main__study-buttonB{
     display: flex;
@@ -333,12 +344,13 @@ pc 1920px ~ 1200px
     align-items: center;
     position: absolute;
     right: 40px;
-    bottom: 55px;
-    width: 40px;
-    height: 40px;
+    bottom: 95px;
+    width: 50px;
+    height: 50px;
     background-color: black;
     border-radius: 100%;
     opacity:0.6;
+    
 }
 
 }
