@@ -95,11 +95,13 @@ h2.main__study-h2:after {
         black 5%,
         black 93%,
         transparent 100%);
+    overflow: hidden;
 }
 
 
 .main__slide-container{
     width: 100%;
+    overflow: hidden;
     
     -webkit-mask: linear-gradient(to right,transparent,
         black 5%,
@@ -115,6 +117,7 @@ h2.main__study-h2:after {
 }
 .main__slide-list{
     display: flex;
+    
 }
 
 .main__slide-box{
@@ -129,6 +132,7 @@ h2.main__study-h2:after {
 }
 
 h3{
+    
     display: flex;
     justify-content: center;
     margin: 6% 0;
