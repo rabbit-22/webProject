@@ -11,7 +11,9 @@
 body { font-family: 'Noto Sans KR', sans-serif; margin: 0; }
 li {list-style: none;}
 a {text-decoration: none;}
-
+.mobile {
+    display: none;
+}
 header { 
     background-color: white; 
     display: flex;
@@ -268,7 +270,7 @@ h2.main__join-h2:after {
 
 .main__etc{
 
-    padding: 20em;
+    padding: 10em;
     
 }
 
@@ -278,11 +280,15 @@ footer{
 }
 
 .footer__info{
-    display: flex;
-    justify-content: space-between;
+   
     width: 52.08%; 
     margin: 0 auto;
     color: white;
+    
+}
+.footer__info-wrap{
+     display: flex;
+    justify-content: space-between;
     
 }
 
@@ -295,6 +301,10 @@ footer{
     font-size: 0.70em;
 }
 
+.mobile{
+    
+
+}
 
 /*
 pc 1920px ~ 1200px
@@ -362,67 +372,252 @@ pc 1920px ~ 1200px
 
 /*767px 이하일때 nav를 버튼눌렀을때 나오는걸로 빼기*/
 @media all and (max-width:767px){
+    .mobile {
+        display: block;
+    }
+    
     .header-wrap{
-    width: 95%; 
+    width: 100%; 
     margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     
 }
     .header-wrap__logo{
-    margin: 1em;
-}
+        display: none;
+    }
+    .header-wrap__logo-mobile{
+        margin: 1em;
+    }
+    main{
+        width: 100%;
+    }
+   
     .main-wrap{
-        width: 95%;
-        margin: 0 auto;
+        position: relative;
+        width: 100%;
+    }
+    .main__CBU-image{
+        display: none;
+    }
+    .main__member{
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        left: 45px;
+        top: 20px;
+        font-weight: bold;
+        z-index: 1;
         
     }
-    .main__study-container{
-        height: 100px;
+    .main__member > a{
+        color: white;
     }
-
-    .main__slide-box{
-        width: 70px;
-        height: 70px;
+    .main__member-join{
+        border-bottom: 2px solid white;
     }
-    .nav-wrap > li{
-        font-size: 0.5em;
-    }
-    .footer__info{
-       width: 95%; 
-       margin: 0 auto;
+    .main__member-login{
+        border-bottom: 2px solid white;
     }
     
-    .main__study-buttonA{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 30px;
-    bottom: 118px;
-    width: 30px;
-    height: 30px;
-    background-color: black;
-    border-radius: 100%;
-    opacity:0.6;
-}
-.main__study-buttonB{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 30px;
-    bottom: 118px;
-    width: 30px;
-    height: 30px;
-    background-color: black;
-    border-radius: 100%;
-    opacity:0.6;
-}
-  
+    .main__CBU-image-mobile{
+        z-index: 0;
+    }
+    
+    h2.main__study-h2:after{
+        border-bottom: none;
+    }
+    
+    .main__study-info{
+        display: flex;
+        justify-content: space-between;
+        margin: 2em;
+    }
+    .main__study-info>h2{
+        margin: 0;
+        font-size: 1.3em;
+    
+    }
+    
+    .main__study-detail-mobile > a{
+        display: flex;
+        font-size: 0.7em;
+        font-weight: bold;
+        margin: 0.5em;
+        color: black;
+    }
+    .main__study-detail-mobile a > p{
+        margin: 0;
+        padding-right: 0.5em;
+    }
+    .main__study-detail-mobile a > i{
+        margin-top: 0.15em;
+    }
+    
+    .main__study-wrap{
+        width: 100%;
+        height: 185px;
+        -webkit-mask: none;
+        
+        
+        
+    }
+    .contour{
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 3px solid #ded6cf;
+    }
+   
+    .main__slide-container{
+        width: 100%;
+        margin-left: 1em;
+        overflow: hidden;
+        -webkit-mask: none;
+    }
+
+
+    .main__slide-box{
+        width: 125px;
+        height: 150px;
+        border-radius: 1.2em;
+        
+    }
+    .main__study-slide{
+        position: relative;
+    }
+    h3{
+        position: absolute;
+        width: 100px;
+        bottom: 7px;
+        left: 23px;
+        font-size: 1.3em;
+        font-weight: bold;
+        color: white;
+        
+    }
+    h3:hover{
+        font-size: 1.3em;
+    }
+    
+    .nav-wrap{
+        display: none;
+    }
+    .nav-wrap-mobile{
+        display: flex;
+        justify-content: flex-end;
+        margin: 1em;
+        font-size: 1.5em;
+        color: #53504b;
+        cursor: pointer;
+    }
+    
+    .main__study-buttons{
+        display: none;
+    }
+    
+    .main__join{
+        display: none;
+    }
+    
+    .main__etc{
+        padding: 0;
+        height: 260px;
+        
+    }
+        
+    .main__etc-notice-info{
+        
+        display: flex;
+        justify-content: space-between;
+        margin: 2em 2em 1.5em 2em;
+    }
+   
+    .main__etc-h2{
+        margin: 0;
+        font-size: 1.3em;
+    
+    }
+    
+    .main__etc-detail-mobile > a{
+        display: flex;
+        font-size: 0.7em;
+        font-weight: bold;
+        margin: 0.5em;
+        color: black;
+    }
+    .main__etc-detail-mobile a > p{
+        margin: 0;
+        padding-right: 0.5em;
+    }
+    .main__etc-detail-mobile a > i{
+        margin-top: 0.15em;
+    }
+    
+    .main__etc-active{
+        width: 100%;
+        height: 270px;
+        
+    }
+    
+    
+    
+    .footer__info{
+        width: 95%;
+        height: 220px;
+        margin: 0 auto;
+        display: flex;
+        
+        
+    
+    }
+    
+    .main__study-buttons{
+        display: none;
+    }
+    
+    .footer_mobile{
+        display: none;
+    }
+    
+    .footer__info{
+        display: block;
+        margin: 0;
+        
+        
+    }
+    .footer__info-CBU{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        height: 15px;
+        font-size: 0.9em;
+        font-weight: 600;
+        margin-top: 30px;
+
+    }
+    .footer__info-staffs-mobile{
+        display: flex;
+        justify-content: center;
+        font-size: 1.3em;
+        font-weight: 600;
+    }
+    .footer__info-wrap{
+        display: block;
+        padding-top: 50px;
+    }
+    .footer__info-logo{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .footer_info-mobile{
+        padding: 0 0.5em;
+    }
 }
 
- 
+/*html 슬라이드 name 수정, 회원가입 로그인 글씨 구현, 메뉴 슬라이드 구현, 터치슬라이드 구현*/
     
     
 
