@@ -28,8 +28,17 @@
                        <li><a href="#">컨텐츠</a></li>
                        <li><a href="#">회원 관리</a></li>
                    </ul>
-                   <div class="nav-wrap-mobile mobile">
+                   
+                   <div class="nav-wrap-mobile mobile" onclick='openNav()'>
                        <i class="fas fa-bars"></i>
+                   </div>
+                   <div id="mysidenav" class="nav-wrap-sidenav mobile">
+                    <a href="#" class="closebtn" onclick='closeNav()'>x</a>
+                       <a href="#">카테고리1</a>
+                       <a href="#">카테고리2</a>
+                       <a href="#">카테고리3</a>
+                       <a href="#">카테고리4</a>
+                       <a href="#">카테고리5</a>
                    </div>
                 </nav>
              </div>
@@ -270,5 +279,13 @@
         </footer>
     </div>
     <script src="script.js"></script>
+    <script>
+		function openNav() {
+			document.getElementById('mysidenav').style.width = '250px';
+		}
+		function closeNav() {
+			document.getElementById('mysidenav').style.width = '0';
+		}
+	</script>
 </body>
 </html>
