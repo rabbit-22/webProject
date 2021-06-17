@@ -2,8 +2,8 @@ const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: false,
-    slidesPerView: 3.5,
-    slidesPerGroup: 3.5,
+    slidesPerView: 3.2,
+    slidesPerGroup: 3.2,
     observer: true,
     observeParents: true,
     spaceBetween: 24,
@@ -12,17 +12,13 @@ const swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
     breakpoints: {
-        1350: {
+        1280: {
             slidesPerView: 5.5,
             slidesPerGroup:5.5,
         },
-        1000: {
-            slidesPerView: 4.5,
-            slidesPerGroup:4.5,
-        },
         600: {
-            slidesPerView: 4.5,
-            slidesPerGroup: 4.5,
+            slidesPerView: 4,
+            slidesPerGroup: 4,
         }
         
 
